@@ -23,5 +23,5 @@ Click [here](https://github.com/MaxAnderson95/TPLink-PlugController-PowerShell/b
 
 ## Credit
 Big thanks to [MaxAnderson95](https://github.com/MaxAnderson95/TPLink-PlugController-PowerShell) for making the main powershell script to get this to work.
-## and
+# and
 Big thanks to [EgoManiac's TPLink-PoSH](https://github.com/EgoManiac/TPlink-PoSH) for the code base for this project. My goal with this was to: cleanup the code, convert this to module format, and give myself a project.
