@@ -22,6 +22,4 @@ Or Send the command using raw JSON.
 Click [here](https://github.com/MaxAnderson95/TPLink-PlugController-PowerShell/blob/master/Sources/Resources/TPLink-Smarthome-commands.txt) to find a list of valid JSON commands the HS100 or HS110 will accept.
 
 ## Credit
-Big thanks to [MaxAnderson95](https://github.com/MaxAnderson95/TPLink-PlugController-PowerShell) for making the main powershell script to get this to work.
-and
-Big thanks to [EgoManiac's TPLink-PoSH](https://github.com/EgoManiac/TPlink-PoSH) for the code base for this project. My goal with this was to: cleanup the code, convert this to module format, and give myself a project.
+Big thanks to [MaxAnderson95](https://github.com/MaxAnderson95/TPLink-PlugController-PowerShell) for making the main powershell script to get this to work and Big thanks to [EgoManiac's TPLink-PoSH](https://github.com/EgoManiac/TPlink-PoSH) for the code base for this project. My goal with this was to: cleanup the code, convert this to module format, and give myself a project.
