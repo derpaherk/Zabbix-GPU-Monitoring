@@ -6,4 +6,4 @@ Also going to have zabbix restart TPLink HS100 or HS110 smart plug! So when your
 
 
 ## Disclaimer
-I put this together for myself mainly, but if others find what I have found useful then rejoice!  I wasn't able to really find any good info on Monitoring AMD cards so I sudo created it. Nvidia was a bit more friendly.. But I wanted them all in one easy to find area.
+I put this together for myself mainly, but if others find what I have found useful then rejoice!  I wasn't able to really find any good info on Monitoring AMD cards so I pseudo created it. Nvidia was a bit more friendly.. But I wanted them all in one easy to find area.
