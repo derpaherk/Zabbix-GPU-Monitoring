@@ -1,10 +1,11 @@
+# Thoughts
 This is a generic template. Since it does WMI calls I would recommend cloning this template and leaving the Blank AMD template as a starting point for other AMD templates. This template isn't 100% it will need tweaking, especially if you have AMD rigs that have different configurations, i.e. two rigs have 6 cards, one rig has 3 cards and another might have 8. While this template will show you all of the cards on the three card rig it will only show you four cards on the other three rigs. It’s a good starting point... Also, if you plan on doing something special like a smart plugin restart when the GPU load drops to 50% for 5 minutes, you wouldn't want this same template on 4 different rigs, it could get wacky.  Also the Template has graphs so you will need to adjust those accordingly.
 
-# Little Back Story.
+## Little Back Story.
 Here is my setup. I have one rig running one card and another rig running four cards. On the four card rig I have a smart plugin that I can remotely turn off and on. What I have done is cloned two templates from the “AMD Monitoring Template”. I edited the template for the one card rig by deleting all the items that aren’t needed. On the four card rig… I left the template the same since I originally created the “AMD Monitoring Template” based on the four card rig. I did add a trigger for the four card rig to watch for when the GPU load goes before 50% for a certain time. After the trigger happens Zabbix then runs an Action I created that will run a reboot script for the smart plugin.  It auto reboots and the Machine is mining again in about 8 minutes. This was a big step as my machine would always seem to die at the wrong time….. So no more constantly watching. Zabbix will auto restart the troublesome machine and then just email me about it... I did the email so I know to check my hash rate. While I trust the system I put in place, it’s still money if they aren’t running correctly.
 
 
-## Steps to get going.
+# Steps to get going.
 This folder is for the Zabbix AMD template. This will assist you in Monitoring AMD GPUs on windows machines using WMI calls.
 Using Open Hardware Monitor.
 
