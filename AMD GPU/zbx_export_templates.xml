@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2018-05-17T17:45:57Z</date>
+    <date>2018-05-18T14:19:27Z</date>
     <groups>
         <group>
             <name>AMD Mining Rigs</name>
@@ -482,6 +482,198 @@
         </template>
     </templates>
     <triggers>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/0&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU0 Temperature is extremely high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>A GPU's temperature is getting extremely high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/0&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;73</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU0 Temperature is high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>A GPU's temperature is getting high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/0&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;75</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU0 Temperature is very high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>A GPU's temperature is getting very high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/6&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU1 Temperature is extremely high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>A GPU's temperature is getting extremely high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/6&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;73</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU1 Temperature is high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>A GPU's temperature is getting high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/6&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;75</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU1 Temperature is very high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>A GPU's temperature is getting very high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/12&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU2 Temperature is extremely high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>A GPU's temperature is getting extremely high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/12&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;73</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU2 Temperature is high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>A GPU's temperature is getting high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/12&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;75</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU2 Temperature is very high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>A GPU's temperature is getting very high!</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/18&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;80</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU3 Temperature is extremely high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>5</priority>
+            <description>A GPU's temperature is getting extremely high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/18&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;73</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU3 Temperature is high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>A GPU's temperature is getting high!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/18&quot; and SensorType=&quot;Temperature&quot;].last()}&gt;75</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>GPU3 Temperature is very high</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description>A GPU's temperature is getting very high!</description>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
         <trigger>
             <expression>{Blank AMD:wmi.get[root\openhardwaremonitor,SELECT Value FROM Sensor WHERE Parent=&quot;/atigpu/0&quot; and SensorType=&quot;Load&quot;].last()}&lt;60</expression>
             <recovery_mode>0</recovery_mode>
