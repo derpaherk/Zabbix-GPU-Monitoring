@@ -52,7 +52,7 @@ Once you get the Parent value changed in each WMI call Zabbix should start to pu
 
 
 
-##Credits:
+##Credits
 Thanks to [Open Hardware Monitor]( http://openhardwaremonitor.org/downloads/) for creating the program that allows GPU WMI calls
 Thanks to [WMI Explorer]( https://www.ks-soft.net/hostmon.eng/wmi/) and [WMI Explorer 2.0]( https://blogs.technet.microsoft.com/gladiatormsft/2014/11/11/wmi-explorer-2-0-is-now-on-codeplex/) creators. Makes finding the WMI settings easier.
 And of course to Zabbix for making a WMI.GET built into Zabbix
