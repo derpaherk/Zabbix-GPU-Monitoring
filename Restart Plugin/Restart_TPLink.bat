@@ -1,1 +1,0 @@
-Powershell.exe -File  C:\scripts\Restart_TPLink.ps1
