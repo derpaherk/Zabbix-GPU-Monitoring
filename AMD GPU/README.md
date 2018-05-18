@@ -43,7 +43,7 @@ You will need to use a WMI explorer to find the Parent values of your AMD cards.
 Download wmiexplorer.zip
 Extract it and then run the wmiexplorer.exe
 Connect the wmiexplorer to the NameSpace: Root\OpenHardwareMonitor
-You can either hunt through the interface for 1 or 2 locations Hardware or Sensor. Since the template has most of the wanted Sensor Types selected you can just run this query: select * from Hardware
+You can either hunt through the interface for 1 or 2 locations: Hardware or Sensor. Since the template has most of the wanted Sensor Types selected you can just run this query: select * from Hardware
 
 The Query will show you all of the GPU cards. You can then get the Identifier value (this is what is in the parent of the wmi call) from each card, it will look something like /atigpu/#.
 
